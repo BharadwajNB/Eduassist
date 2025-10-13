@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aawesh Kumar Das - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div id="ai-background"></div>
+    
+    <nav>
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">Aawesh<span class="highlight">.</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#qualifications" class="nav-link">Qualifications</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <h1 class="glitch-text">Hi, I'm <span class="highlight">Aawesh Kumar Das</span></h1>
+                <h2 class="subtitle">Computer Science Engineering Student</h2>
+                <p class="bio">
+                    Passionate about creating innovative solutions through code. 
+                    Exploring the intersections of AI, web development, and software engineering.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary-btn">Get in Touch</a>
+                    <a href="#projects" class="btn secondary-btn">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="qualifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Qualifications</h2>
+            <div class="qualification-card">
+                <div class="qualification-header">
+                    <h3>B.Tech in Computer Science Engineering</h3>
+                    <span class="qualification-year">Expected 2028</span>
+                </div>
+                <p class="qualification-institution">Aditya University</p>
+                <p class="qualification-description">
+                    Focusing on artificial intelligence, machine learning, and full-stack development.
+                    Maintaining a strong academic record while participating in various technical clubs and events.
+                </p>
+                <div class="qualification-courses">
+                    <h4>Key Coursework:</h4>
+                    <ul>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Machine Learning</li>
+                        <li>Web Development</li>
+                        <li>Database Management Systems</li>
+                        <li>Computer Networks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Django</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Time Management</span>
+                        <span class="skill-tag">Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>AI-Powered Image Recognition</h3>
+                    <p>A deep learning model that can identify and classify objects in images with high accuracy.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Demo</a>
+                        <a href="https://github.com/Aaweshdas" class="btn">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Smart Home Automation System</h3>
+                    <p>IoT-based system for controlling home appliances using voice commands and mobile app.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Raspberry Pi</span>
+                        <span class="tech-tag">React Native</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Demo</a>
+                        <a href="https://github.com/Aaweshdas" class="btn">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>E-Learning Platform</h3>
+                    <p>A web application for students to access courses, submit assignments, and track progress.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Demo</a>
+                        <a href="https://github.com/Aaweshdas" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Web Development Intern</h3>
+                    <span class="experience-duration">Summer 2024</span>
+                </div>
+                <p class="experience-company">Tech Innovations Inc.</p>
+                <p class="experience-description">
+                    Developed and maintained responsive web applications using React and Node.js.
+                    Collaborated with a team of developers to implement new features and fix bugs.
+                    Participated in code reviews and agile development processes.
+                </p>
+                <ul class="experience-achievements">
+                    <li>Implemented a new user authentication system that improved security by 40%</li>
+                    <li>Optimized database queries resulting in 30% faster page load times</li>
+                    <li>Contributed to the development of 3 major features that enhanced user experience</li>
+                </ul>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Research Assistant</h3>
+                    <span class="experience-duration">2023 - Present</span>
+                </div>
+                <p class="experience-company">University AI Lab</p>
+                <p class="experience-description">
+                    Assisting professors with research in machine learning and natural language processing.
+                    Implementing and testing various algorithms to improve accuracy and efficiency.
+                    Documenting research findings and preparing reports for publication.
+                </p>
+                <ul class="experience-achievements">
+                    <li>Developed a text classification model with 92% accuracy</li>
+                    <li>Co-authored a research paper on sentiment analysis techniques</li>
+                    <li>Created a dataset of 10,000 labeled examples for training models</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>National Coding Competition Finalist</h3>
+                    <p>Reached the finals of the National Coding Championship, competing against 5000+ participants.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Hackathon Winner</h3>
+                    <p>First place in University Hackathon for developing an innovative solution for healthcare.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Academic Excellence Award</h3>
+                    <p>Received for maintaining top grades in computer science courses for consecutive semesters.</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Open Source Contributor</h3>
+                    <p>Active contributor to several open-source projects with over 50 accepted pull requests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="social-links">
+                        <a href="https://github.com/Aaweshdas" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aaweshdas/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:aaravdas208@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aawesh Kumar Das. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="animation.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
