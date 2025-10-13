@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Input Methods</title>
+<style>
+  table {
+    border: 1;
+    border-collapse: collapse;
+    width: 55%;
+    margin-top: 15px;
+  }
+  td {
+    border: 1px solid #444;
+    padding: 6px;
+  }
+</style>
+</head>
+<body>
+  <h2>Various Ways to Get User Input in JavaScript</h2>
+  <form onsubmit="registerUser(event)">
+    <label>Full Name:</label><br>
+    <input type="text" id="fullName"><br>
+    <label>Email Address:</label><br>
+    <input type="email" id="userEmail"><br>
+    <label>Date of Birth:</label><br>
+    <input type="date" id="birthDate"><br>
+    <label>Permanent Address:</label><br>
+    <textarea id="userAddress"></textarea><br>
+    <p>Select Gender:</p>
+    <input type="radio" name="gender" value="Male">Male<br>
+    <input type="radio" name="gender" value="Female">Female<br>
+
+    <p>Languages Known:</p>
+    <input type="checkbox" name="lang" value="English">English<br>
+    <input type="checkbox" name="lang" value="Hindi">Hindi<br>
+    <input type="checkbox" name="lang" value="Telugu">Telugu<br>
+    <input type="checkbox" name="lang" value="Tamil">Tamil<br>
+
+    <p>Choose Country:</p>
+    <select id="nation">
+      <option value="">--Select--</option>
+      <option value="India">India</option>
+      <option value="China">China</option>
+      <option value="Japan">Japan</option>
+    </select><br><br>
+
+    <button type="submit">Register</button>
+    <button type="button" onclick="loginUser()">Login</button>
+  </form>
+
+  <div id="showData"></div>
+
+<script>
+  // Method 1: Using prompt() - direct user input through dialog
+  function loginUser() {
+    let user = prompt("Enter your Username:");
+    let pass = prompt("Enter your Password:");
+    alert("Login Success!\nUsername: " + user + "\nPassword: " + pass);
+  }
+
+  // Method 2: Using form input + DOM manipulation
+  function registerUser(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("fullName").value;
+    let email = document.getElementById("userEmail").value;
+    let dob = document.getElementById("birthDate").value;
+    let address = document.getElementById("userAddress").value;
+    let country = document.getElementById("nation").value;
+
+    let gender = document.querySelector('input[name="gender"]:checked');
+    let genderValue = gender ? gender.value : "Not selected";
+
+    let langs = document.getElementsByName("lang");
+    let knownLangs = [];
+    for (let i = 0; i < langs.length; i++) {
+      if (langs[i].checked) {
+        knownLangs.push(langs[i].value);
+      }
+    }
+
+    let tableHTML = `
+      <strong>Registration Summary</strong>
+      <table>
+        <tr><td>Name</td><td>${name}</td></tr>
+        <tr><td>Email</td><td>${email}</td></tr>
+        <tr><td>Date of Birth</td><td>${dob}</td></tr>
+        <tr><td>Address</td><td>${address}</td></tr>
+        <tr><td>Gender</td><td>${genderValue}</td></tr>
+        <tr><td>Languages</td><td>${knownLangs.join(", ")}</td></tr>
+        <tr><td>Country</td><td>${country}</td></tr>
+      </table>
+    `;
+    document.getElementById("showData").innerHTML = tableHTML;
+  }
+</script>
+</body>
+</html>

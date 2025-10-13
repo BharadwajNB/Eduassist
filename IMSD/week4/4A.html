@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Practice</title>
+  <style>
+    /* Simple Selectors */
+    h1 { color: darkblue; border-bottom: 3px solid navy; }
+    .highlight { background-color: #ffffb3; padding: 5px; }
+    #sub { color: darkgreen; }
+    p, li { font-family: Arial, sans-serif; }
+
+    /* Combinator Selectors */
+    section p { color: seagreen; }
+    ol > li { font-weight: bold; color: purple; }
+    h4 + p { color: crimson; }
+    h4 ~ p { text-decoration: underline; }
+
+    /* Pseudo Classes */
+    a:hover { color: darkorange; }
+    li:first-child { color: blue; }
+    li:nth-child(3) { color: darkred; }
+
+    /* Pseudo Elements */
+    p::before { content: "💡 "; color: gray; }
+    p::after { content: " ✔"; color: green; }
+    p::first-letter { font-size: 1.2em; font-weight: bold; }
+
+    /* Attribute Selectors */
+    input[type="email"] { border: 2px dashed darkviolet; }
+    input[placeholder^="Enter"] { background: #e6f7ff; }
+    a[href^="https"] { font-style: italic; }
+
+    body {
+      background: #fafafa;
+      margin: 15px 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Selectors Practice Demo</h1>
+  <h2 class="highlight">Highlighted Subheading Example</h2>
+
+  <section>
+    <p>This paragraph is inside a section (descendant selector).</p>
+  </section>
+
+  <ol>
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+  </ol>
+
+  <h4>Heading with Related Paragraphs</h4>
+  <p>This comes right after h4 (adjacent sibling).</p>
+  <p>This is another paragraph related to h4 (general sibling).</p>
+
+  <a href="https://www.example.org">Visit Example Link</a>
+
+  <p>This paragraph shows pseudo-elements in action.</p>
+
+  <form>
+    <input type="text" placeholder="Enter your name">
+    <input type="email" placeholder="Your student ID">
+  </form>
+</body>
+</html>

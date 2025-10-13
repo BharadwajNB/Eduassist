@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>B.Tech I Semester Timetable</title>
+    <style>
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #222;
+            margin: 40px;
+        }
+        h1 {
+            text-align: center;
+            color: #003566;
+            text-decoration: underline;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 18px;
+            color: #0077b6;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 95%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 1px solid #0077b6;
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: #0077b6;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #e3f2fd;
+        }
+        td[rowspan] {
+            background-color: #ffc300;
+            color: #000;
+            font-weight: bold;
+        }
+        td[colspan] {
+            background-color: #ffe5b4;
+            font-style: italic;
+        }
+        tr:hover {
+            background-color: #caf0f8;
+        }
+    </style>
+</head>
+<body>
+    <h1>B.Tech I Semester Timetable</h1>
+    <table>
+        <caption>Department of Artificial Intelligence & Data Science</caption>
+        <tr>
+            <th>Day</th>
+            <th>9:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+            <th>12:00 - 1:00</th>
+            <th>1:00 - 2:00</th>
+            <th>2:00 - 3:00</th>
+            <th>3:00 - 4:00</th>
+        </tr>
+        <!-- Monday -->
+        <tr>
+            <td>Monday</td>
+            <td>Applied Physics</td>
+            <td>Mathematics-I</td>
+            <td>Communication Skills</td>
+            <td rowspan="5"><strong>Lunch Break</strong></td>
+            <td>Python Programming</td>
+            <td>Data Visualization</td>
+            <td>Library</td>
+        </tr>
+        <!-- Tuesday -->
+        <tr>
+            <td>Tuesday</td>
+            <td>Engineering Chemistry</td>
+            <td>Python Programming</td>
+            <td>Digital Electronics</td>
+            <td>Mathematics-I</td>
+            <td>Physics</td>
+            <td>Sports</td>
+        </tr>
+        <!-- Wednesday -->
+        <tr>
+            <td>Wednesday</td>
+            <td>Python Lab</td>
+            <td colspan="2">Python Programming Lab</td>
+            <td>Communication Skills</td>
+            <td>Data Visualization</td>
+            <td>Mentoring Hour</td>
+        </tr>
+        <!-- Thursday -->
+        <tr>
+            <td>Thursday</td>
+            <td>Physics Lab</td>
+            <td colspan="2">Physics Laboratory</td>
+            <td>Engineering Chemistry</td>
+            <td>Mathematics-I</td>
+            <td>Workshop</td>
+        </tr>
+        <!-- Friday -->
+        <tr>
+            <td>Friday</td>
+            <td>Digital Electronics</td>
+            <td>Mathematics-I</td>
+            <td>Python Programming</td>
+            <td>English</td>
+            <td>Library</td>
+            <td>Sports</td>
+        </tr>
+    </table>
+</body>
+</html>

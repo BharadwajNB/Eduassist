@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Semantic HTML</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fafafa;
+            margin: 20px;
+            color: #333;
+        }
+        header, nav, main, article, aside, footer {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        header {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            background-color: #e6f0ff;
+            text-align: center;
+        }
+        nav a {
+            color: #004d99;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        main {
+            display: flex;
+            gap: 20px;
+        }
+        article {
+            flex: 3;
+            background-color: #ffffff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        aside {
+            flex: 1;
+            background-color: #f0f8ff;
+        }
+        footer {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+        }
+        figure {
+            text-align: center;
+        }
+        figcaption {
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exploring Semantic HTML</h1>
+        <p>Making web content structured, meaningful, and user-friendly</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Tutorials</a> |
+        <a href="#">About</a>
+    </nav>
+
+    <main>
+        <article>
+            <h2>What Are Semantic Elements?</h2>
+            <p>Semantic elements clearly describe their meaning both to the browser and the developer. They make the code more accessible and easier to read.</p>
+            
+            <figure>
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" 
+                     alt="HTML5 Logo" height="180" width="180">
+                <figcaption>Figure: HTML5 Semantic Layout Example</figcaption>
+            </figure>
+
+            <section>
+                <h3>Advantages of Using Semantics</h3>
+                <ul>
+                    <li>Improves SEO ranking and page clarity</li>
+                    <li>Helps assistive technologies interpret content</li>
+                    <li>Makes code more organized and readable</li>
+                </ul>
+            </section>
+
+            <div>
+                <p>This text is inside a <b>div</b> container. The <code>&lt;div&gt;</code> tag helps in grouping sections for styling and JavaScript use.</p>
+            </div>
+        </article>
+
+        <aside>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">HTML Tags Reference</a></li>
+                <li><a href="#">CSS Layout Guide</a></li>
+                <li><a href="#">Web Accessibility Basics</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Learners Hub | Designed by Bharadwaj</p>
+    </footer>
+</body>
+</html>

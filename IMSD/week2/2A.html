@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Records Table</title>
+    <style>
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            background-color: #f4f9f9;
+            color: #222;
+            margin: 40px;
+        }
+        h1 {
+            text-align: center;
+            color: #0077b6;
+            text-decoration: underline;
+        }
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #ffffff;
+        }
+        th {
+            background-color: #0077b6;
+            color: white;
+            padding: 12px;
+            text-align: center;
+        }
+        td {
+            text-align: center;
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+        tr:hover {
+            background-color: #caf0f8;
+        }
+        caption {
+            caption-side: bottom;
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+        table, th, td {
+            border: 1px solid #0077b6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Information Record</h1>
+    <table>
+        <tr>
+            <th rowspan="2">Emp ID</th>
+            <th rowspan="2">Employee Name</th>
+            <th rowspan="2">Department</th>
+            <th rowspan="2">Position</th>
+            <th colspan="2">Contact Details</th>
+            <th rowspan="2">Salary</th>
+            <th rowspan="2">Location</th>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        <tr>
+            <td>EMP201</td>
+            <td>Riya Mehta</td>
+            <td>Design</td>
+            <td>UI/UX Designer</td>
+            <td>riya.design@company.com</td>
+            <td>9876501234</td>
+            <td>$72,000</td>
+            <td>Mumbai, India</td>
+        </tr>
+        <tr>
+            <td>EMP202</td>
+            <td>Aditya Verma</td>
+            <td>IT</td>
+            <td>Full Stack Developer</td>
+            <td>aditya.it@company.com</td>
+            <td>9812345678</td>
+            <td>$85,000</td>
+            <td>Pune, India</td>
+        </tr>
+        <tr>
+            <td>EMP203</td>
+            <td>Sneha Roy</td>
+            <td>Finance</td>
+            <td>Accounts Executive</td>
+            <td>sneha.finance@company.com</td>
+            <td>9988772233</td>
+            <td>$65,000</td>
+            <td>Kolkata, India</td>
+        </tr>
+        <tr>
+            <td>EMP204</td>
+            <td>Vikram Singh</td>
+            <td>HR</td>
+            <td>Recruiter</td>
+            <td>vikram.hr@company.com</td>
+            <td>9100234500</td>
+            <td>$58,000</td>
+            <td>Delhi, India</td>
+        </tr>
+    </table>
+    <caption>Table: Employee data with contact and salary information.</caption>
+</body>
+</html>

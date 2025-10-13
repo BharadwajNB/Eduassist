@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #dbeafe, #f8fafc);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      form {
+        background: #ffffff;
+        padding: 15px 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 420px;
+      }
+      h2 {
+        text-align: center;
+        color: #1e40af;
+        margin-bottom: 10px;
+      }
+      label {
+        display: block;
+        margin-top: 8px;
+        font-weight: bold;
+        color: #1e3a8a;
+      }
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 6px;
+        margin-top: 3px;
+        border: 1px solid #93c5fd;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+      textarea {
+        resize: none;
+      }
+      .gender,
+      .courses {
+        display: flex;
+        gap: 8px;
+        margin-top: 3px;
+      }
+      .buttons {
+        text-align: center;
+        margin-top: 12px;
+      }
+      input[type="submit"],
+      input[type="reset"] {
+        background-color: #2563eb;
+        color: white;
+        border: none;
+        padding: 7px 18px;
+        border-radius: 5px;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: #1e3a8a;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h2>Student Registration</h2>
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter full name" required />
+      <label>Email</label>
+      <input type="email" placeholder="example@email.com" required />
+      <label>Mobile</label>
+      <input
+        type="tel"
+        pattern="[0-9]{10}"
+        placeholder="10-digit number"
+        required
+      />
+      <label>Gender</label>
+      <div class="gender">
+        <label><input type="radio" name="g" /> Male</label>
+        <label><input type="radio" name="g" /> Female</label>
+      </div>
+      <label>Branch</label>
+      <select required>
+        <option value="">--Select--</option>
+        <option>CSE</option>
+        <option>ECE</option>
+        <option>EEE</option>
+        <option>MECH</option>
+        <option>CIVIL</option>
+      </select>
+      <label>Courses Interested</label>
+      <div class="courses">
+        <label><input type="checkbox" /> C</label>
+        <label><input type="checkbox" /> Java</label>
+        <label><input type="checkbox" /> Python</label>
+      </div>
+      <label>DOB</label>
+      <input type="date" />
+      <label>Address</label>
+      <textarea rows="2" placeholder="Enter address"></textarea>
+      <div class="buttons">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Defined Object Demo</title>
+</head>
+<body>
+  <h2><font size="6">User-defined Objects - Car</font></h2>
+  <script>
+    // Define a class named 'Car'
+    class Car {
+      // Constructor function
+      constructor(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+      }
+
+      // Getter for Car
+      getCarDetails() {
+        return `<font size='5'>Model: ${this.model} <br> Make: ${this.make} <br> Year: ${this.year}</font>`;
+      }
+
+      // Setter for Car
+      setCarDetails(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+      }
+
+      // Method to display Car details
+      startEngine() {
+        return `<font size='5'>Model: ${this.model} <br> Make: ${this.make} <br> Year: ${this.year}<br></font>`;
+      }
+    }
+
+    // Create object instance from Car class
+    const myCar = new Car("Toyota", "Camry", 2023);
+
+    // Display initial car details using method
+    document.write("<strong><font size='5'>Car Details:</font></strong><br>");
+    document.write(myCar.startEngine() + "<br>");   
+
+    // Update car details using setter
+    myCar.setCarDetails("Honda", "Civic", 2022);
+
+    // Display updated car details using getter
+    document.write("<strong><font size='5'>Reassigned Car Details using Setter:</font></strong><br>");
+    document.write("<strong><font size='5'>Access New Car Details using Getter:</font></strong><br>");
+    document.write(myCar.getCarDetails() + "<br>"); 
+  </script>
+</body>
+</html>

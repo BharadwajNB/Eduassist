@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fixed and Tilted Background Demo</title>
+  <style>
+    body {
+      margin: 0;
+      height: 220vh; /* Creates scroll effect */
+      font-family: Arial, sans-serif;
+      color: #222;
+    }
+    .bg-box {
+      position: fixed;
+      top: 30%;
+      left: 0;
+      width: 100%;
+      height: 250px;
+      background-image: url('https://picsum.photos/id/1021/800/500');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: scaleX(-1) rotate(10deg); /* Mirrored and tilted */
+      opacity: 0.85;
+      z-index: -2; /* Keeps it behind text */
+    }
+    .page-content {
+      padding: 60px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .vertical-text {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      font-weight: bold;
+      color: darkslateblue;
+    }
+  </style></head>
+<body>
+  <div class="bg-box"></div>
+  <div class="page-content">
+    <h1 class="vertical-text">Explore</h1>
+    <p>This webpage shows a fixed tilted background image that stays visible while scrolling.</p>
+    <p>The transformation uses <strong>scaleX(-1)</strong> for mirroring and <strong>rotate()</strong> for tilt. You can experiment with <strong>rotateY()</strong> or <strong>rotateX()</strong> for 3D effects.</p>
+    <p>Fixed positioning allows the background to remain stationary as content moves over it.</p>
+  </div>
+</body>
+</html>

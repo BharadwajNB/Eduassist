@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Object Demo</title>
+  <script>
+    function showMathOperations() {
+      let number = 9.56;
+
+      // Math properties
+      let pi = Math.PI;
+      let e = Math.E;
+
+      // Math methods
+      let round = Math.round(number);
+      let floor = Math.floor(number);
+      let ceil = Math.ceil(number);
+      let sqrt = Math.sqrt(64);
+      let pow = Math.pow(2, 5);
+      let abs = Math.abs(-7);
+      let max = Math.max(10, 30, 20, 5);
+      let min = Math.min(10, 30, 20, 5);
+      let random = Math.random(); // Between 0 and 1
+
+      // Output with larger font
+      document.getElementById("pi").innerHTML = "<font size='5'>Math.PI: " + pi + "</font>";
+      document.getElementById("e").innerHTML = "<font size='5'>Math.E: " + e + "</font>";
+      document.getElementById("round").innerHTML = "<font size='5'>Math.round(9.56): " + round + "</font>";
+      document.getElementById("floor").innerHTML = "<font size='5'>Math.floor(9.56): " + floor + "</font>";
+      document.getElementById("ceil").innerHTML = "<font size='5'>Math.ceil(9.56): " + ceil + "</font>";
+      document.getElementById("sqrt").innerHTML = "<font size='5'>Math.sqrt(64): " + sqrt + "</font>";
+      document.getElementById("pow").innerHTML = "<font size='5'>Math.pow(2, 5): " + pow + "</font>";
+      document.getElementById("abs").innerHTML = "<font size='5'>Math.abs(-7): " + abs + "</font>";
+      document.getElementById("max").innerHTML = "<font size='5'>Math.max(10, 30, 20, 5): " + max + "</font>";
+      document.getElementById("min").innerHTML = "<font size='5'>Math.min(10, 30, 20, 5): " + min + "</font>";
+      document.getElementById("random").innerHTML = "<font size='5'>Math.random(): " + random.toFixed(4) + "</font>";
+    }
+  </script>
+</head>
+<body>
+  <h2><font size="6">JavaScript Math Object Demo</font></h2>
+  <button onclick="showMathOperations()"><font size="5">Show Math Results</font></button><br><br>
+
+  <p id="pi"></p>
+  <p id="e"></p>
+  <p id="round"></p>
+  <p id="floor"></p>
+  <p id="ceil"></p>
+  <p id="sqrt"></p>
+  <p id="pow"></p>
+  <p id="abs"></p>
+  <p id="max"></p>
+  <p id="min"></p>
+  <p id="random"></p>
+</body>
+</html>
+

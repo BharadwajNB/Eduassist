@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document Object Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 20px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    p {
+      font-size: 26px;  /* Bigger font for screenshot */
+      margin: 10px 0;
+      color: #333;
+    }
+    h2 {
+      font-size: 32px;  /* Larger heading */
+      margin-bottom: 20px;
+    }
+  </style>
+  <script>
+    function showDocumentInfo() {
+      document.getElementById("title").innerText = "Title: " + document.title;
+      document.getElementById("url").innerText = "URL: " + document.URL;
+      document.getElementById("domain").innerText = "Domain: " + document.domain;
+      document.getElementById("lastModified").innerText = "Last Modified: " + document.lastModified;
+      document.getElementById("outputArea").style.color = "green";
+      // document.write("<p>This line is written using <b>document.write()</b>.</p>");
+    }
+  </script>
+</head>
+<body>
+  <h2>Using Document Object Properties and Methods</h2>
+  <button onclick="showDocumentInfo()">Show Document Info</button>
+  <div id="outputArea">
+    <p id="title"></p>
+    <p id="url"></p>
+    <p id="domain"></p>
+    <p id="lastModified"></p>
+  </div>
+</body>
+</html>

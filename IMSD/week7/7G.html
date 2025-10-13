@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date Object Demo</title>
+  <script>
+    function showDateInfo() {
+      let currentDate = new Date();
+
+      // Using Date object methods
+      let fullDate = currentDate.toDateString();
+      let time = currentDate.toTimeString();
+      let year = currentDate.getFullYear();
+      let month = currentDate.getMonth();
+      let date = currentDate.getDate();
+      let day = currentDate.getDay();
+      let hours = currentDate.getHours();
+      let minutes = currentDate.getMinutes();
+      let seconds = currentDate.getSeconds();
+      let milliseconds = currentDate.getMilliseconds();
+      let timezoneOffset = currentDate.getTimezoneOffset();
+
+      document.getElementById("output").innerHTML = `
+        <font size='5'>
+        <strong>Full Date:</strong> ${fullDate} <br>
+        <strong>Time:</strong> ${time} <br>
+        <strong>Year:</strong> ${year} <br>
+        <strong>Month (0-based):</strong> ${month} <br>
+        <strong>Date:</strong> ${date} <br>
+        <strong>Day of Week (0=Sun):</strong> ${day} <br>
+        <strong>Hours:</strong> ${hours} <br>
+        <strong>Minutes:</strong> ${minutes} <br>
+        <strong>Seconds:</strong> ${seconds} <br>
+        <strong>Milliseconds:</strong> ${milliseconds} <br>
+        <strong>Timezone Offset (in mins):</strong> ${timezoneOffset}
+        </font>
+      `;
+    }
+  </script>
+</head>
+<body>
+  <h2><font size="6">JavaScript Date Object Example</font></h2>
+  <button onclick="showDateInfo()"><font size="5">Show Current Date Info</font></button><br><br>
+  <p id="output"></p>
+</body>
+</html>

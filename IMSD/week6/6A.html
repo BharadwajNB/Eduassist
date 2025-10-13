@@ -1,0 +1,28 @@
+script.js:
+function showExternalMessage() {
+  alert("This message comes from the external JS file!");
+}
+
+index.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Integration Example</title>
+
+  <!-- Linking External JavaScript File -->
+  <script src="script.js"></script>
+
+  <!-- Internal JavaScript Block -->
+  <script>
+    function showInternalMessage() {
+      alert("This message is displayed using internal JavaScript!");
+    }
+  </script>
+</head>
+<body>
+  <h2>Internal vs External JavaScript Example</h2>
+  <button onclick="showInternalMessage()">Run Internal Script</button>
+  <button onclick="showExternalMessage()">Run External Script</button>
+</body>
+</html>

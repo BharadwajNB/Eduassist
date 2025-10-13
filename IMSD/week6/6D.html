@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Voting Eligibility Verification</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  table {
+    width: 60%;
+    margin-top: 25px;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #dfe6e9;
+  }
+  caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+</style>
+<script>
+  function voterCheck() {
+    let personName = prompt("Please enter your full name:");
+    let personAge = Number(prompt("Please enter your age:"));
+
+    let eligibility;
+    if (isNaN(personAge)) {
+      eligibility = "Invalid age entered!";
+      personAge = "-";
+    } else if (personAge >= 18) {
+      eligibility = "You are eligible to vote.";
+    } else {
+      eligibility = "You are not eligible to vote.";
+    }
+
+    document.getElementById("nameCell").innerText = personName;
+    document.getElementById("ageCell").innerText = personAge;
+    document.getElementById("statusCell").innerText = eligibility;
+  }
+</script>
+</head>
+<body onload="voterCheck()">
+
+  <h2>Voting Eligibility Status</h2>
+  <table>
+    <caption>Voter Details</caption>
+    <tr>
+      <th>Full Name</th>
+      <th>Age</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td id="nameCell"></td>
+      <td id="ageCell"></td>
+      <td id="statusCell"></td>
+    </tr>
+  </table>
+
+</body>
+</html>

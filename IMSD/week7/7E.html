@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Object Demo</title>
+  <script>
+    function showStringOperations() {
+      let text = "  JavaScript is Powerful!  ";
+
+      // String Properties & Methods
+      let length = text.length;
+      let trimmed = text.trim();
+      let upper = text.toUpperCase();
+      let lower = text.toLowerCase();
+      let char = text.charAt(5);
+      let index = text.indexOf("Powerful");
+      let includes = text.includes("Script");
+      let replaced = text.replace("Powerful", "Amazing");
+      let sliced = text.slice(2, 12);
+      let sub = text.substring(2, 12);
+      let split = text.trim().split(" "); // split into words
+
+      // Output results with larger font
+      document.getElementById("original").innerHTML = "<font size='5'>Original Text: '" + text + "'</font>";
+      document.getElementById("length").innerHTML = "<font size='5'>Length: " + length + "</font>";
+      document.getElementById("trimmed").innerHTML = "<font size='5'>Trimmed: '" + trimmed + "'</font>";
+      document.getElementById("upper").innerHTML = "<font size='5'>Uppercase: " + upper + "</font>";
+      document.getElementById("lower").innerHTML = "<font size='5'>Lowercase: " + lower + "</font>";
+      document.getElementById("char").innerHTML = "<font size='5'>Character at index 5: '" + char + "'</font>";
+      document.getElementById("index").innerHTML = "<font size='5'>Index of 'Powerful': " + index + "</font>";
+      document.getElementById("includes").innerHTML = "<font size='5'>Includes 'Script': " + includes + "</font>";
+      document.getElementById("replace").innerHTML = "<font size='5'>Replace 'Powerful' with 'Amazing': " + replaced + "</font>";
+      document.getElementById("slice").innerHTML = "<font size='5'>Slice (2,12): " + sliced + "</font>";
+      document.getElementById("substring").innerHTML = "<font size='5'>Substring (2,12): " + sub + "</font>";
+      document.getElementById("split").innerHTML = "<font size='5'>Split into words: " + split.join(" | ") + "</font>";
+    }
+  </script>
+</head>
+<body>
+  <h2><font size="6">JavaScript String Object Demo</font></h2>
+  <button onclick="showStringOperations()"><font size="5">Run String Operations</font></button><br><br>
+
+  <p id="original"></p>
+  <p id="length"></p>
+  <p id="trimmed"></p>
+  <p id="upper"></p>
+  <p id="lower"></p>
+  <p id="char"></p>
+  <p id="index"></p>
+  <p id="includes"></p>
+  <p id="replace"></p>
+  <p id="slice"></p>
+  <p id="substring"></p>
+  <p id="split"></p>
+</body>
+</html>

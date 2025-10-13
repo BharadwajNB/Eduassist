@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Different Output Techniques in JavaScript</title>
+  <script>
+    // 1. Using alert()
+    function showPopup() {
+      alert("Hello! This message is shown using alert().");
+    }
+
+    // 2. Using console.log()
+    function logToConsole() {
+      console.log("Console Output: Message printed in browser console.");
+    }
+
+    // 3. Using document.write()
+    function writeToDocument() {
+      document.write("<h3 style='color:green;'>Output shown using document.write()</h3>");
+    }
+
+    // 4. Using innerHTML
+    function displayInnerHTML() {
+      document.getElementById("displayBox").innerHTML = "Output displayed using innerHTML property.";
+    }
+  </script>
+</head>
+<body>
+  <h2>Various Ways to Display Output in JavaScript</h2>
+
+  <button onclick="showPopup()">Use alert()</button><br><br>
+  <button onclick="logToConsole()">Use console.log()</button><br><br>
+  <button onclick="writeToDocument()">Use document.write()</button><br><br>
+  <button onclick="displayInnerHTML()">Use innerHTML</button><br><br>
+
+  <div id="displayBox" style="color: darkred; font-weight: bold;"></div>
+</body>
+</html>
+
